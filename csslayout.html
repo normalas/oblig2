@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/maincss.css" />
+  <link rel="stylesheet" href="css/printstilark.css" />
+  <title>CSS Layout</title>
+</head>
+<body>
+
+  <header>
+    <h1>CSS Layout</h1>
+    <nav>
+      <a href="index.html">Hjem</a>
+      <a href="github.html">GitHub</a>
+      <a href="mediatyper.html">Mediatyper</a>
+      <a href="#">CSS Layout</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>CSS, Layout, og DEG</h2>
+      <p>
+        CSS har gått gjennom mange faser/teknologier i løpet av årene når det kommer
+        til å stillegge websider. Nå om dagene så er det flexbox og grid som er de
+        aktuelle teknologiene som brukes for å få en side til å se skikkelig ut;
+        to lettbrukte og ryddige teknologier. Det var dessverre ikke like lett før
+        i tiden da man brukte tables, og senere float/clear. De fikk selvfølgelig
+        jobben gjort ordentlig, til og med med bra resultater innimellom, men de krevde
+        også ofte “hacks” for å få det til å fungere slik man ønsket. Dette gjelder
+        da spesielt float/clear.
+      </p>
+      <p>
+        Å stillegge en side med tabeller var en veldig inelegant måte å designe en
+        side – dette er da fordi en burde skille innholdet fra designet. Med andre ord,
+        HTML-dokumentet skal fokusere kun på hva brukeren skal se, og dets semantiske
+        betydning; mens CSS-dokumentet skal fokusere på hvordan brukeren skal se innholdet.
+        Dermed er bruken av tabeller for å få innholdet ordnet i fine rader og kolonner
+        regnet som fy-fy. <br />
+        Float/clear fjernet problemene med å bruke HTML-tagger for å stillegge sidene, men de introduserte et annet problem: nemlig det at dersom du float-er et element, så tar du det ut av den normale flyten til dokumentet. Dette fører til, for eksempel, at boksen som dette elementet var en del av kollapser (siden innholdet forsvinner). Når dette skjer må man bruke en såkalt “clear-fix” for å fikse det. Denne fiksen fører til at overflødige elementer må legges inn i HTML-dokumentet uten at det tilføyer ekstra innhold.
+    </p>
+
+    </article>
+  </main>
+
+  <aside>hei</aside>
+
+  <footer>
+    <p>Nikolai Svanåsbakken</p>
+    <a href="mailto:nikolai.m.svanasbakken@hiof.no">nikolai.m.svanasbakken@hiof.no</a>
+  </footer>
+
+</body>
+</html>

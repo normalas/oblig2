@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+body{
+  width:80%;
+  margin: 0 auto;
+  font-family: helvetica, sans-serif;
+  display:grid;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+  grid-template-areas:
+    "head head head head"
+    "nav nav nav nav"
+    "main main main aside"
+    "foot foot foot foot";
+  background-image: linear-gradient(#b23, #aa2, #c23);
+}
+header{
+  grid-area: head;
+  text-align:center;
+  color: #303030;
+  text-shadow:2px 2px #1fa;
+  background-image: url('../bilder/asia-asian-colorful-595848.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-color: #00ff00
+}
+nav{
+  grid-area: nav;
+  text-shadow:none;
+  grid-gap:10px;
+  background-color:rgba(230,230,230,0.5);
+}
+nav a{
+  /*grid-area: test;*/
+  border:solid 1px;
+  border-radius: 5px;
+}
+a{
+  text-decoration: none;
+  display:inline-block;
+}
+nav a:visited{
+  color:inherit;
+}
+a.knapp{
+  border:1px solid;
+  border-radius:4px;
+  padding:2px;
+  background-color:#39a0ea;
+}
+a.knapp:hover{
+  background-color:#aaaaaa;
+}
+nav a:hover{
+  background-color: grey;
+}
+main{
+  grid-area: main;
+}
+.flex-container{
+  height: 100%;
+  display:flex;
+  flex-flow: row no-wrap;
+  /* tilsvarer flex-direction: row og flex-wrap: wrap */
+  justify-content: space-around;
+}
+.flex-container article{
+  max-width:33%;
+}
+main article{
+  border:1px solid
+}
+main article a{
+  text-decoration:underline;
+  color:black;
+}
+aside{
+  grid-area: aside;
+  display:grid;
+  grid-gap: 5px;
+}
+aside iframe{
+  width:100%;
+  height:150px;
+}
+aside section{
+  background-color: #82ae12;
+  text-align: center;
+}
+footer{
+  grid-area:foot;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: baseline;
+  border:1px solid;
+  border-radius:5px;
+}
+.footerEpost{
+
+}
+.footerNavn{
+
+}
+.italics{
+  font-style:italic;
+}
+img{
+  max-width:200px;
+}
